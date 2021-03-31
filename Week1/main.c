@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include <string.h>
+#include <time.h>
 
 typedef struct
 {
@@ -230,7 +231,6 @@ void main (void ){
     char ** listStopWord = getListStopWorld(stopWordFileName,numStopWord);
     tree treeWord=NULL ;
     readFileText(textFileName,listStopWord,*numStopWord,&treeWord);
-    displayTree(treeWord);
-
+    // displayTree(treeWord);
    
 }
